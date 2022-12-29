@@ -5,3 +5,5 @@ class Output {
         echo("Hello ${name}")
     }
 }
+
+// test
