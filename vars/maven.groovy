@@ -1,4 +1,6 @@
-def call(String command){
+def call(List commands){
     sh("chmod +x mvnw")
-    sh("./mvnw ${command}")
+    for(command in commands){ 
+        sh("./mvnw ${command}")
+    }
 }
